@@ -4,7 +4,7 @@
 --
 
 vim.opt.backup = false
-
+vim.opt.wrap = false
 vim.opt.mouse = ""
 
 vim.g.autoformat = false

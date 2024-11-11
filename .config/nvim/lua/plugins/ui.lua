@@ -35,7 +35,11 @@ __ __  ____  __ __  ____  __ __  ____   ____  __    __  __    __
     lazy = true,
     name = "catppuccin",
     opts = {
-      flavour = "latte",
+      flavour = "auto", -- latte, frappe, macchiato, mocha
+      background = { -- :h background
+        light = "latte",
+        dark = "mocha",
+      },
       transparent_background = true,
       integrations = {
         aerial = true,
@@ -72,6 +76,18 @@ __ __  ____  __ __  ____  __ __  ____   ____  __    __  __    __
         treesitter_context = true,
         which_key = true,
       },
+    },
+  },
+  {
+    "f-person/auto-dark-mode.nvim",
+    opts = {
+      update_interval = 1000,
+      set_dark_mode = function()
+        vim.api.nvim_set_option_value("background", "dark", {})
+      end,
+      set_light_mode = function()
+        vim.api.nvim_set_option_value("background", "light", {})
+      end,
     },
   },
   {

@@ -38,7 +38,7 @@ keybinds clear-defaults=true {
         bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0;}
     }
     move {
-        bind "Alt h" { SwitchToMode "Normal"; }
+        bind "Alt m" { SwitchToMode "Normal"; }
         bind "n" "Tab" { MovePane; }
         bind "p" { MovePaneBackwards; }
         bind "h" "Left" { MovePane "Left"; }
@@ -87,8 +87,8 @@ keybinds clear-defaults=true {
         bind "Alt c" { ScrollToBottom; SwitchToMode "Normal"; }
         bind "j" "Down" { ScrollDown; }
         bind "k" "Up" { ScrollUp; }
-        bind "Alt f" "PageDown" "Right" "l" { PageScrollDown; }
-        bind "Alt b" "PageUp" "Left" "h" { PageScrollUp; }
+        bind "Alt u" "PageDown" "Right" "l" { PageScrollDown; }
+        bind "Alt d" "PageUp" "Left" "h" { PageScrollUp; }
         bind "d" { HalfPageScrollDown; }
         bind "u" { HalfPageScrollUp; }
         bind "n" { Search "down"; }
@@ -178,7 +178,7 @@ keybinds clear-defaults=true {
         bind "Alt t" { SwitchToMode "Tab"; }
     }
     shared_except "move" "locked" {
-        bind "Alt h" { SwitchToMode "Move"; }
+        bind "Alt m" { SwitchToMode "Move"; }
     }
     shared_except "tmux" "locked" {
         bind "Alt b" { SwitchToMode "Tmux"; }

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 rofi_command="rofi -theme $HOME/.config/rofi/config/screenshot.rasi"
 
-time=`utc date %Y-%m-%d-%H%M%S.%3N`
-dir="~/Pictures/Screenshots"
-file="~/Pictures/Screenshots/${time}.png"
+time=`date -u +%Y-%m-%d-%H%M%S.%3N`
+dir="$HOME/Pictures/Screenshots"
+file="$HOME/Pictures/Screenshots/${time}.png"
 
 # Icons
 icon1="$HOME/.config/dunst/icons/collections.svg"

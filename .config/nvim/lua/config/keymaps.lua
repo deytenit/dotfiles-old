@@ -20,3 +20,8 @@ keymap.set("n", "<C-M-h>", "<C-w><")
 keymap.set("n", "<C-M-j>", "<C-w>+")
 keymap.set("n", "<C-M-k>", "<C-w>-")
 keymap.set("n", "<C-M-l>", "<C-w>>")
+
+-- sixty.nvim
+local sixty = require("sixty")
+sixty.set("n", "<Up>")
+sixty.set("n", "<Down>")

@@ -1,4 +1,4 @@
-@import url("./latte.css");
+@import url("./colors.css");
 
 * {
   border: none;
@@ -102,13 +102,20 @@ window#waybar.hidden {
   color: @text;
 }
 
+#workspace #custom-dunst {
+  margin-left: 8px;
+  padding: 0 12px;
+
+  background: @base;
+  color: @text;
+}
+
 #tray {
   margin-right: 8px;
   padding: 0 12px;
   transition: none;
 
-  color: @base;
-  background: @text;
+  background: #11111b;
 }
 
 #media {
