@@ -1,4 +1,6 @@
-@import url("./colors.css");
+/*BEGIN_WAYBAR_THEME*/
+@import url("./dark.css");
+/*END_WAYBAR_THEME*/
 
 * {
   border: none;
@@ -40,8 +42,8 @@ window#waybar.hidden {
 #irl #custom-weather {
   padding: 0 12px;
 
-  color: @base;
-  background: @sky;
+  color: @cyan-focus;
+  background: @cyan-blur;
 }
 
 #keyboard {
@@ -58,8 +60,8 @@ window#waybar.hidden {
 #keyboard #keyboard-state {
   padding: 0 12px;
 
-  color: @base;
-  background: @flamingo;
+  color: @red-focus;
+  background: @red-blur;
 }
 
 /*
@@ -110,6 +112,14 @@ window#waybar.hidden {
   color: @text;
 }
 
+#workspace #custom-darkman {
+  margin-left: 8px;
+  padding: 0 12px;
+
+  background: @base;
+  color: @text;
+}
+
 #tray {
   margin-right: 8px;
   padding: 0 12px;
@@ -131,13 +141,13 @@ window#waybar.hidden {
 }
 
 #media .playing {
-  color: @base;
-  background: @green;
+  color: @green-focus;
+  background: @green-blur;
 }
 
 #media .paused {
-  color: @text;
-  background: @yellow;
+  color: @yellow-focus;
+  background: @yellow-blur;
 }
 
 #media .idle {
@@ -187,18 +197,18 @@ window#waybar.hidden {
 }
 
 #hardware #battery.charging {
-  color: @base;
-  background-color: @sapphire;
+  color: @blur-focus;
+  background-color: @blur-blur;
 }
 
 #hardware #battery.warning:not(.charging) {
-  background-color: @yellow;
-  color: @base;
+  color: @orange-focus;
+  background-color: @orange-blur;
 }
 
 #hardware #battery.critical:not(.charging) {
-  background-color: @red;
-  color: @text;
+  color: @red-focus;
+  background-color: @red-blur;
 
   animation-name: blink;
   animation-duration: 0.5s;

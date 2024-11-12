@@ -70,7 +70,7 @@
   // Workspace
   "group/workspace": {
     "orientation": "inherit",
-    "modules": ["hyprland/window", "custom/dunst"]
+    "modules": ["hyprland/window", "custom/dunst", "custom/darkman"]
   },
   // "hyprland/workspaces": {
   //   "disable-scroll": true,
@@ -92,6 +92,14 @@
     "format": "{text}",
     "exec": "sleep 1 && [[ `dunstctl is-paused` == \"true\" ]] && echo \"\" || echo \"\"",
     "on-click": "dunstctl set-paused toggle",
+    "interval": "once",
+    "exec-on-event": true,
+    "tooltip": false
+  },
+  "custom/darkman": {
+    "format": "{text}",
+    "exec": "sleep 1 && [[ `darkman get` == 'dark' ]] && echo '' || echo ''",
+    "on-click": "darkman toggle",
     "interval": "once",
     "exec-on-event": true,
     "tooltip": false

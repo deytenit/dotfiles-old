@@ -30,6 +30,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.haskell" },
     -- ui
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    -- util
+    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     -- import/override with your plugins
     { import = "plugins" },
   },
