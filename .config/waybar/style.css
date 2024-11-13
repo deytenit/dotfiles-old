@@ -197,8 +197,8 @@ window#waybar.hidden {
 }
 
 #hardware #battery.charging {
-  color: @blur-focus;
-  background-color: @blur-blur;
+  color: @blue-focus;
+  background-color: @blue-blur;
 }
 
 #hardware #battery.warning:not(.charging) {
