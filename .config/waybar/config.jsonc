@@ -139,28 +139,14 @@
       "children-class": "group-audio",
       "transition-left-to-right": false
     },
-    "modules": ["pulseaudio"]
+    "modules": ["wireplumber"]
   },
-  "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
-    "format": "{icon} <sub>{volume}%</sub>\t{format_source}",
-    "format-bluetooth": " {icon} <sub>{volume}%</sub>\t{format_source}",
-    "format-bluetooth-muted": " 󰝟\t{format_source}",
-    "format-muted": "󰝟\t{format_source}",
-    "format-source": "",
-    "format-source-muted": "",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "󰟅",
-      "headset": "󰋎",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["", "", ""]
-    },
-    "on-click": "pavucontrol"
+  "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": "",
+    "on-click": "pwvucontrol",
+    "format-icons": ["", "", ""]
   },
-
   // Hardware
   "group/hardware": {
     "orientation": "inherit",

@@ -1,5 +1,5 @@
 /*BEGIN_WAYBAR_THEME*/
-@import url("./light.css");
+@import url("./dark.css");
 /*END_WAYBAR_THEME*/
 
 * {
@@ -157,7 +157,7 @@ window#waybar.hidden {
 #media #audio {
 }
 
-#media #audio #pulseaudio {
+#media #audio #wireplumber {
   padding: 0 12px;
   transition: none;
 }
