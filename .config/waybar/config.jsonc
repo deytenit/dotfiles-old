@@ -21,7 +21,7 @@
     ]
   },
   "custom/pacman": {
-    "format": "{text}",
+    "format": "{}",
     "interval": 3600, // Run every hour
     "exec": "$HOME/.config/waybar/scripts/custom-pacman.sh", // Fetch number of outdate packages
     "exec-if": "exit 0", // Always run
@@ -40,7 +40,7 @@
     "tooltip": false
   },
   "custom/weather": {
-    "format": "<b>{text}</b>",
+    "format": "<b>{}</b>",
     "tooltip": true,
     "interval": 1800,
     "exec": "$HOME/.config/waybar/scripts/custom-weather.py",
@@ -89,7 +89,7 @@
     "separate-outputs": true
   },
   "custom/dunst": {
-    "format": "{text}",
+    "format": "{}",
     "exec": "sleep 1 && [[ `dunstctl is-paused` == \"true\" ]] && echo \"\" || echo \"\"",
     "on-click": "dunstctl set-paused toggle",
     "interval": "once",
@@ -97,7 +97,7 @@
     "tooltip": false
   },
   "custom/darkman": {
-    "format": "{text}",
+    "format": "{}",
     "exec": "sleep 1 && [[ `darkman get` == 'dark' ]] && echo '' || echo ''",
     "on-click": "darkman toggle",
     "interval": "once",
