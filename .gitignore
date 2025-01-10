@@ -1,69 +1,19 @@
 # Ignore everything by default.
-*
 
 # Root
 
-!README.md
-
-!.gitconfig
 !.gitignore
-
-# Assets
-!assets/
-assets/**
-!assets/**/*
 
 # Config
 !.config/
 .config/*
-
-## Dunst
-!.config/dunst
-.config/dunst/**
-!.config/dunst/dunstrc
 
 ## Fish
 !.config/fish
 .config/fish/**
 !.config/fish/config.fish
 
-## Hyprland
-!.config/hypr
-.config/hypr/**
-!.config/hypr/**/*
-
-## Kitty
-!.config/kitty
-.config/kitty/**
-!.config/kitty/kitty.conf
-
 ## Neovim
 !.config/nvim
 .config/nvim/**
 !.config/nvim/**/*
-
-## Rofi
-!.config/rofi
-.config/rofi/**
-!.config/rofi/**/*
-
-# Themes
-!.config/themes
-.config/themes/**
-!.config/themes/**/*
-
-# Waybar
-!.config/waybar
-.config/waybar/**
-!.config/waybar/**/*
-
-# Zellij
-!.config/zellij
-.config/zellij/**
-!.config/zellij/config.kdl
-
-
-
-
-
-
