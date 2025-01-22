@@ -56,13 +56,17 @@ assets/**
 !.config/waybar
 .config/waybar/**
 !.config/waybar/**/*
+.config/waybar/.*
 
 # Zellij
 !.config/zellij
 .config/zellij/**
 !.config/zellij/config.kdl
 
-
+# Darkman
+!.config/darkman
+.config/darkman/**
+!.config/darkman/**/*
 
 
 

@@ -1,6 +1,4 @@
-/*BEGIN_WAYBAR_THEME*/
-@import url("./dark.css");
-/*END_WAYBAR_THEME*/
+@import url("./.theme.css");
 
 * {
   border: none;
