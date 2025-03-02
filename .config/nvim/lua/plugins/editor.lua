@@ -1,41 +1,11 @@
 return {
   {
     "telescope.nvim",
-    dependencies = {
-      "nvim-telescope/telescope-file-browser.nvim",
-    },
     keys = {
-      {
-        "<leader>fE",
-        function()
-          local telescope = require("telescope")
-
-          telescope.extensions.file_browser.file_browser({
-            path = "%:p:h",
-            cwd = vim.fn.expand("%:p:h"),
-            respect_gitignore = false,
-            hidden = true,
-            grouped = true,
-          })
-        end,
-        desc = "Explorer (cwd)",
-      },
-      {
-        "<leader>fe",
-        function()
-          local telescope = require("telescope")
-          telescope.extensions.file_browser.file_browser({
-            respect_gitignore = false,
-            hidden = true,
-            grouped = true,
-          })
-        end,
-        desc = "Explorer (Root Dir)",
-      },
       {
         "<leader>sg",
         LazyVim.pick("live_grep", { root = false }),
-        desc = "Grep (Root Dir)"
+        desc = "Grep (cwd)"
       },
       {
         "<leader>sG",
@@ -45,17 +15,17 @@ return {
       {
         "<leader>ff",
         LazyVim.pick("files", { root = false }),
-        desc = "Find Files (Root Dir)"
+        desc = "Find Files (cwd)"
       },
       {
         "<leader>fF",
         LazyVim.pick("files", { cwd = vim.fn.expand("%:p:h") }),
-        desc = "Find Files (cwd)"
+        desc = "Find Files (Directory of Current File)"
       },
       {
         "<leader><space>",
         LazyVim.pick("files", { root = false }),
-        desc = "Find Files (Root Dir)"
+        desc = "Find Files (cwd)"
       },
     },
   },
@@ -63,6 +33,35 @@ return {
     "deytenit/sixty.nvim",
     config = function()
       require("sixty").setup()
+    end,
+  },
+  {
+    "echasnovski/mini.files",
+    options = {
+      use_as_default_explorer = true,
+    },
+    keys = {
+      {
+        "<leader>fE",
+        function()
+          require("mini.files").open(vim.api.nvim_buf_get_name(0), true)
+        end,
+        desc = "Open mini.files (Directory of Current File)",
+      },
+      {
+        "<leader>fe",
+        function()
+          require("mini.files").open(vim.uv.cwd(), true)
+        end,
+        desc = "Open mini.files (cwd)",
+      },
+    }
+  },
+  {
+    "arc",
+    dir = "~/Source/private/arc.nvim",
+    config = function ()
+      require("arc").setup()
     end,
   },
   {

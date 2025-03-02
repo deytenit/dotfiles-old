@@ -17,17 +17,13 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
     -- editor
     { import = "lazyvim.plugins.extras.editor.refactoring" },
+    { import = "lazyvim.plugins.extras.editor.mini-files" },
     -- formatting
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     -- lang
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
-    { import = "lazyvim.plugins.extras.lang.tailwind" },
-    { import = "lazyvim.plugins.extras.lang.clangd" },
     { import = "lazyvim.plugins.extras.lang.markdown" },
-    { import = "lazyvim.plugins.extras.lang.astro" },
-    { import = "lazyvim.plugins.extras.lang.svelte" },
-    { import = "lazyvim.plugins.extras.lang.haskell" },
     -- ui
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- util
