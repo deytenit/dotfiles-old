@@ -6,6 +6,6 @@
 !.gitignore
 
 # Scripts
-!scripts
-scripts/**
-!scripts/**/*
+!bin
+bin/**
+!bin/**/*
