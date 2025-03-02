@@ -1,4 +1,4 @@
-@import "colors.rasi"
+@import ".theme.rasi"
 @import "font.rasi"
 
 * {
